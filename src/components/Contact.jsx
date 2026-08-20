@@ -43,7 +43,7 @@ export default function Contact({ onOpenCalendly, selectedService = '', currency
     '$3,500+',
   ];
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setErrorMessage('');
 
@@ -54,18 +54,49 @@ export default function Contact({ onOpenCalendly, selectedService = '', currency
 
     setIsSubmitting(true);
 
-    setTimeout(() => {
+    try {
+      const response = await fetch('https://formspree.io/f/mgawdvwo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          businessName: formData.businessName,
+          country: formData.country,
+          service: formData.service,
+          budget: formData.budget,
+          message: formData.message,
+          _subject: `New Bildora Project Inquiry: ${formData.name} (${formData.businessName || formData.country})`,
+        }),
+      });
+
+      if (response.ok) {
+        setIsSubmitting(false);
+        setSubmitted(true);
+        try {
+          confetti({
+            particleCount: 80,
+            spread: 70,
+            origin: { y: 0.6 },
+            colors: ['#0052ff', '#3b82f6', '#93c5fd', '#10b981'],
+          });
+        } catch (err) {}
+      } else {
+        const data = await response.json();
+        setIsSubmitting(false);
+        if (data && data.errors && data.errors.length > 0) {
+          setErrorMessage(data.errors.map((err) => err.message).join(', '));
+        } else {
+          setErrorMessage('There was an issue submitting your inquiry. Please try again or email us directly at hello@bildora.in');
+        }
+      }
+    } catch (err) {
       setIsSubmitting(false);
-      setSubmitted(true);
-      try {
-        confetti({
-          particleCount: 80,
-          spread: 70,
-          origin: { y: 0.6 },
-          colors: ['#0052ff', '#3b82f6', '#93c5fd', '#10b981'],
-        });
-      } catch (err) {}
-    }, 700);
+      setErrorMessage('Network connection error. Please try again or email us directly at hello@bildora.in');
+    }
   };
 
   return (
