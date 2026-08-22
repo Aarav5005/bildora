@@ -166,7 +166,12 @@ export default function Contact({ onOpenCalendly, selectedService = '', currency
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form 
+                onSubmit={handleSubmit} 
+                action="https://formspree.io/f/mgawdvwo" 
+                method="POST" 
+                className="space-y-5"
+              >
                 {errorMessage && (
                   <div className="p-3 rounded-xl bg-red-50 border border-red-200 text-xs text-red-700 flex items-center gap-2">
                     <AlertCircle className="w-4 h-4 shrink-0" />
@@ -176,11 +181,14 @@ export default function Contact({ onOpenCalendly, selectedService = '', currency
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                    <label htmlFor="contact-name" className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 mb-1.5">
                       Your Name <span className="text-brand-600">*</span>
                     </label>
                     <input
+                      id="contact-name"
+                      name="name"
                       type="text"
+                      autoComplete="name"
                       required
                       placeholder="e.g. Rahul Sharma"
                       value={formData.name}
@@ -190,11 +198,14 @@ export default function Contact({ onOpenCalendly, selectedService = '', currency
                   </div>
 
                   <div>
-                    <label className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                    <label htmlFor="contact-email" className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 mb-1.5">
                       Work Email <span className="text-brand-600">*</span>
                     </label>
                     <input
+                      id="contact-email"
+                      name="email"
                       type="email"
+                      autoComplete="email"
                       required
                       placeholder="rahul@company.com"
                       value={formData.email}
@@ -206,11 +217,14 @@ export default function Contact({ onOpenCalendly, selectedService = '', currency
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                    <label htmlFor="contact-business" className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 mb-1.5">
                       Company / Organization
                     </label>
                     <input
+                      id="contact-business"
+                      name="businessName"
                       type="text"
+                      autoComplete="organization"
                       placeholder="e.g. Acme Enterprises"
                       value={formData.businessName}
                       onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
@@ -219,11 +233,14 @@ export default function Contact({ onOpenCalendly, selectedService = '', currency
                   </div>
 
                   <div>
-                    <label className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                    <label htmlFor="contact-country" className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 mb-1.5">
                       Country / Region
                     </label>
                     <input
+                      id="contact-country"
+                      name="country"
                       type="text"
+                      autoComplete="country-name"
                       placeholder="e.g. India, UAE, USA, UK"
                       value={formData.country}
                       onChange={(e) => setFormData({ ...formData, country: e.target.value })}
@@ -233,10 +250,12 @@ export default function Contact({ onOpenCalendly, selectedService = '', currency
                 </div>
 
                 <div>
-                  <label className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                  <label htmlFor="contact-service" className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 mb-1.5">
                     Service of Interest
                   </label>
                   <select
+                    id="contact-service"
+                    name="service"
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-[#09090b] focus:border-transparent transition-all bg-[#fbfbfb]"
@@ -254,6 +273,7 @@ export default function Contact({ onOpenCalendly, selectedService = '', currency
                   <label className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 mb-2">
                     Estimated Project Budget
                   </label>
+                  <input type="hidden" name="budget" value={formData.budget} />
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                     {budgetOptions.map((b) => (
                       <button
@@ -273,10 +293,12 @@ export default function Contact({ onOpenCalendly, selectedService = '', currency
                 </div>
 
                 <div>
-                  <label className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                  <label htmlFor="contact-message" className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 mb-1.5">
                     Describe what you'd like to improve <span className="text-brand-600">*</span>
                   </label>
                   <textarea
+                    id="contact-message"
+                    name="message"
                     rows={4}
                     required
                     placeholder="Briefly describe the repetitive task or workflow bottleneck you want to automate, and which tools you currently use..."

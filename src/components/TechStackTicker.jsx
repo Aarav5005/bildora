@@ -14,7 +14,7 @@ export default function TechStackTicker() {
   ];
 
   return (
-    <div className="py-14 bg-[#f7f7f8] border-b border-slate-200/80 relative overflow-hidden select-none">
+    <div className="py-14 bg-[#f7f7f8] border-b border-slate-200/80 relative overflow-hidden max-w-full select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
           <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-slate-200 text-slate-800 text-[11px] font-bold tracking-wider uppercase mb-2 shadow-sm">
@@ -31,7 +31,7 @@ export default function TechStackTicker() {
       </div>
 
       {/* Marquee Logo Strip */}
-      <div className="relative w-full overflow-hidden flex items-center">
+      <div className="relative w-full max-w-full overflow-hidden flex items-center">
         <div className="absolute left-0 top-0 bottom-0 w-28 bg-gradient-to-r from-[#f7f7f8] to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-28 bg-gradient-to-l from-[#f7f7f8] to-transparent z-10 pointer-events-none" />
 

@@ -100,8 +100,17 @@ export default function CaseStudies() {
             return (
               <div
                 key={project.id}
+                role="button"
+                tabIndex={0}
+                aria-label={`View ${project.client} case study details`}
                 onClick={() => setActiveModal(project)}
-                className="bento-card rounded-3xl p-6 sm:p-7 flex flex-col justify-between bg-white cursor-pointer hover:ring-2 hover:ring-brand-600/40 hover:-translate-y-1 transition-all duration-300 group shadow-bento"
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    setActiveModal(project);
+                  }
+                }}
+                className="bento-card rounded-3xl p-6 sm:p-7 flex flex-col justify-between bg-white cursor-pointer hover:ring-2 hover:ring-brand-600/40 hover:-translate-y-1 transition-all duration-300 group shadow-bento focus:outline-none focus:ring-2 focus:ring-brand-600"
               >
                 <div>
                   {/* Card Header */}

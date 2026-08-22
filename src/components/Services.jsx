@@ -40,20 +40,29 @@ export default function Services({ currency, onSelectService }) {
     return () => clearInterval(interval);
   }, [isPlayingAudio]);
 
+  const [simulationLog, setSimulationLog] = useState('Idle: Ready to test pipeline');
+
   const triggerWorkflowSimulation = (e) => {
     e?.stopPropagation();
     setIsSimulatingFlow(true);
-    setActiveWorkflowStep(0);
-    const stepInterval = setInterval(() => {
-      setActiveWorkflowStep((prev) => {
-        if (prev >= 3) {
-          clearInterval(stepInterval);
-          setIsSimulatingFlow(false);
-          return 3;
-        }
-        return prev + 1;
-      });
-    }, 700);
+    setActiveWorkflowStep(1);
+    setSimulationLog('1/4: Ingesting Webhook Event...');
+    
+    setTimeout(() => {
+      setActiveWorkflowStep(2);
+      setSimulationLog('2/4: Parsing Payload & Documents...');
+    }, 450);
+
+    setTimeout(() => {
+      setActiveWorkflowStep(3);
+      setSimulationLog('3/4: Validating Schema & Business Rules...');
+    }, 900);
+
+    setTimeout(() => {
+      setActiveWorkflowStep(4);
+      setSimulationLog('4/4: Sync Complete → ERP Updated (380ms) ✓');
+      setIsSimulatingFlow(false);
+    }, 1400);
   };
 
   const services = [
@@ -234,27 +243,35 @@ export default function Services({ currency, onSelectService }) {
                           type="button"
                           onClick={triggerWorkflowSimulation}
                           disabled={isSimulatingFlow}
-                          className="text-[9px] font-mono px-2 py-0.5 rounded bg-brand-600 hover:bg-brand-500 text-white cursor-pointer"
+                          className="text-[9px] font-mono font-bold px-2.5 py-0.5 rounded-full bg-brand-600 hover:bg-brand-500 text-white cursor-pointer active:scale-95 transition-transform"
                         >
-                          {isSimulatingFlow ? 'Testing...' : 'Test Demo'}
+                          {isSimulatingFlow ? 'Simulating...' : '▶ Run Test Demo'}
                         </button>
                       </div>
-                      <div className="grid grid-cols-4 gap-1 text-center font-mono text-[9px]">
-                        {['Input', 'Parse', 'Verify', 'Sync'].map((step, i) => (
-                          <div
-                            key={i}
-                            className={`p-1 rounded-md border transition-all ${
-                              activeWorkflowStep === i && isSimulatingFlow
-                                ? 'bg-brand-950 border-brand-500 text-brand-300 ring-1 ring-brand-500'
-                                : activeWorkflowStep > i
-                                ? 'bg-slate-900 border-emerald-600/50 text-emerald-400'
-                                : 'bg-slate-900 border-slate-800 text-slate-400'
-                            }`}
-                          >
-                            {step}
-                          </div>
-                        ))}
+                      <div className="grid grid-cols-4 gap-1 text-center font-mono text-[9px] mb-2">
+                        {['1. Ingest', '2. Parse', '3. Verify', '4. Sync'].map((step, i) => {
+                          const stepNum = i + 1;
+                          const isCurrent = activeWorkflowStep === stepNum;
+                          const isPast = activeWorkflowStep > stepNum;
+                          return (
+                            <div
+                              key={i}
+                              className={`p-1 rounded-md border transition-all duration-200 ${
+                                isCurrent
+                                  ? 'bg-brand-600/30 border-brand-400 text-white ring-1 ring-brand-400'
+                                  : isPast
+                                  ? 'bg-emerald-950/60 border-emerald-500/60 text-emerald-400 font-bold'
+                                  : 'bg-slate-900 border-slate-800 text-slate-500'
+                              }`}
+                            >
+                              {step}
+                            </div>
+                          );
+                        })}
                       </div>
+                      <p className="text-[10px] font-mono text-slate-300 text-center truncate px-1">
+                        {simulationLog}
+                      </p>
                     </div>
                   )}
 
