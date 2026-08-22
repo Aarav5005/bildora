@@ -346,20 +346,39 @@ export default function Contact({ onOpenCalendly, selectedService = '', currency
               </div>
             </div>
 
-            {/* Direct Email Card */}
-            <div className="bento-card rounded-3xl bg-white p-7">
-              <span className="text-[11px] font-mono font-bold text-slate-400 uppercase tracking-wider block mb-1">
-                Direct Email Correspondence
-              </span>
-              <a
-                href="mailto:admin@bildora.in"
-                className="font-mono text-base font-bold text-[#09090b] hover:text-brand-600 transition-colors block"
-              >
-                ADMIN@BILDORA.IN
-              </a>
-              <p className="text-xs text-slate-500 mt-1 font-normal">
-                For project documents, RFPs, and confidential inquiries.
-              </p>
+            {/* Direct Email & WhatsApp Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="bento-card rounded-3xl bg-white p-6">
+                <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider block mb-1">
+                  Email Correspondence
+                </span>
+                <a
+                  href="mailto:admin@bildora.in"
+                  className="font-mono text-sm font-bold text-[#09090b] hover:text-brand-600 transition-colors block"
+                >
+                  ADMIN@BILDORA.IN
+                </a>
+                <p className="text-[11px] text-slate-500 mt-1 font-normal">
+                  For RFPs & scoping documents.
+                </p>
+              </div>
+
+              <div className="bento-card rounded-3xl bg-white p-6">
+                <span className="text-[10px] font-mono font-bold text-emerald-600 uppercase tracking-wider block mb-1 flex items-center gap-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" /> Direct WhatsApp
+                </span>
+                <a
+                  href="https://wa.me/918882558262?text=Hello%20Bildora!%20I%20would%20like%20to%20discuss%20an%20automation%20project."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono text-sm font-bold text-[#09090b] hover:text-emerald-600 transition-colors block"
+                >
+                  +91 88825 58262
+                </a>
+                <p className="text-[11px] text-slate-500 mt-1 font-normal">
+                  Instant response & chats.
+                </p>
+              </div>
             </div>
           </div>
 

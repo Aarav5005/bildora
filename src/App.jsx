@@ -78,7 +78,7 @@ export default function App() {
       <Footer onOpenCalendly={handleOpenCalendly} />
 
       {/* Floating WhatsApp Quick-Chat Widget */}
-      <WhatsAppButton />
+      <WhatsAppButton phoneNumber="918882558262" />
 
       {/* Calendly Booking Overlay */}
       <CalendlyModal

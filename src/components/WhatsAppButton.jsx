@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MessageSquare, X } from 'lucide-react';
 
-export default function WhatsAppButton({ phoneNumber = '919999999999' }) {
+export default function WhatsAppButton({ phoneNumber = '918882558262' }) {
   const [isOpen, setIsOpen] = useState(false);
   const message = encodeURIComponent("Hello Bildora! I would like to discuss an AI automation / custom software system for my business.");
   const whatsappUrl = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}?text=${message}`;
