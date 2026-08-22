@@ -129,10 +129,10 @@ export default function Hero({ onOpenCalendly }) {
           </div>
 
           <a
-            href="mailto:contact@bildora.in"
+            href="mailto:admin@bildora.in"
             className="font-mono text-slate-900 hover:text-brand-600 tracking-wider uppercase font-semibold transition-colors"
           >
-            HELLO@BILDORA.IN
+            ADMIN@BILDORA.IN
           </a>
         </div>
       </div>

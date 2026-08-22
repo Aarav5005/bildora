@@ -78,7 +78,7 @@ This document serves as the **Single Source of Truth** for Bildora's website cop
   > Bildora designs and builds AI automations, voice agents, business software, ERP systems, and computer vision solutions that reduce repetitive work and help businesses operate more efficiently.
 - **Primary CTA**: `Book a Discovery Call` (Opens live Calendly scheduler)
 - **Secondary CTA**: `Explore Our Services` (Scrolls to `#services`)
-- **Metadata Strip**: `GMT+5:30 • INDIA & WORLDWIDE • HELLO@BILDORA.IN`
+- **Metadata Strip**: `GMT+5:30 • INDIA & WORLDWIDE • ADMIN@BILDORA.IN`
 
 ---
 
@@ -219,13 +219,16 @@ This document serves as the **Single Source of Truth** for Bildora's website cop
       "name": "Bildora",
       "url": "https://bildora.in",
       "logo": "https://bildora.in/favicon.svg",
+      "email": "admin@bildora.in",
       "founder": {
         "@type": "Person",
-        "name": "Aarav Panchal"
+        "name": "Aarav Panchal",
+        "url": "https://www.linkedin.com/in/aarav-panchal-a667ba363"
       },
       "sameAs": [
-        "https://linkedin.com",
-        "https://github.com"
+        "https://www.linkedin.com/in/aarav-panchal-a667ba363",
+        "https://x.com/BildoraAI",
+        "https://github.com/Aarav5005/bildora"
       ]
     },
     {

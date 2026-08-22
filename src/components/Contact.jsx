@@ -90,12 +90,12 @@ export default function Contact({ onOpenCalendly, selectedService = '', currency
         if (data && data.errors && data.errors.length > 0) {
           setErrorMessage(data.errors.map((err) => err.message).join(', '));
         } else {
-          setErrorMessage('There was an issue submitting your inquiry. Please try again or email us directly at hello@bildora.in');
+          setErrorMessage('There was an issue submitting your inquiry. Please try again or email us directly at admin@bildora.in');
         }
       }
     } catch (err) {
       setIsSubmitting(false);
-      setErrorMessage('Network connection error. Please try again or email us directly at hello@bildora.in');
+      setErrorMessage('Network connection error. Please try again or email us directly at admin@bildora.in');
     }
   };
 
@@ -352,10 +352,10 @@ export default function Contact({ onOpenCalendly, selectedService = '', currency
                 Direct Email Correspondence
               </span>
               <a
-                href="mailto:contact@bildora.in"
+                href="mailto:admin@bildora.in"
                 className="font-mono text-base font-bold text-[#09090b] hover:text-brand-600 transition-colors block"
               >
-                HELLO@BILDORA.IN
+                ADMIN@BILDORA.IN
               </a>
               <p className="text-xs text-slate-500 mt-1 font-normal">
                 For project documents, RFPs, and confidential inquiries.

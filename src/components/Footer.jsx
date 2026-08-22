@@ -112,10 +112,10 @@ export default function Footer({ onOpenCalendly }) {
                 Correspondence
               </h4>
               <a
-                href="mailto:contact@bildora.in"
+                href="mailto:admin@bildora.in"
                 className="font-mono text-sm text-slate-300 hover:text-brand-400 transition-colors block mb-3"
               >
-                HELLO@BILDORA.IN
+                ADMIN@BILDORA.IN
               </a>
             </div>
 
@@ -134,22 +134,34 @@ export default function Footer({ onOpenCalendly }) {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-mono">
           <p>© 2025 Bildora. All rights reserved. Founded by Aarav Panchal.</p>
           
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-5 sm:gap-6">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/aarav-panchal-a667ba363"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-white transition-colors flex items-center gap-1"
-              aria-label="Bildora on LinkedIn"
+              className="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5"
+              aria-label="Aarav Panchal on LinkedIn"
             >
               <Linkedin className="w-4 h-4" />
               <span>LinkedIn</span>
             </a>
             <a
-              href="https://github.com"
+              href="https://x.com/BildoraAI"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-white transition-colors flex items-center gap-1"
+              className="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5"
+              aria-label="Bildora on X (Twitter)"
+            >
+              <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-current" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+              <span>X (Twitter)</span>
+            </a>
+            <a
+              href="https://github.com/Aarav5005/bildora"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5"
               aria-label="Bildora on GitHub"
             >
               <Github className="w-4 h-4" />
