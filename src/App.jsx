@@ -12,6 +12,7 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CalendlyModal from './components/CalendlyModal';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export default function App() {
   const [currency, setCurrency] = useState('INR');
@@ -36,6 +37,14 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans flex flex-col selection:bg-brand-600 selection:text-white">
+      {/* Skip to Main Content Accessibility Link */}
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#09090b] focus:text-white focus:rounded-xl focus:shadow-xl focus:outline-none"
+      >
+        Skip to main content
+      </a>
+
       {/* Sticky Glassmorphic Navigation */}
       <Navbar
         onOpenCalendly={handleOpenCalendly}
@@ -44,7 +53,7 @@ export default function App() {
       />
 
       {/* Main Experience Flow */}
-      <main className="flex-grow">
+      <main id="main" className="flex-grow">
         <Hero onOpenCalendly={handleOpenCalendly} />
         <TechStackTicker />
         <Services currency={currency} onSelectService={handleSelectService} />
@@ -67,6 +76,9 @@ export default function App() {
 
       {/* Footer */}
       <Footer onOpenCalendly={handleOpenCalendly} />
+
+      {/* Floating WhatsApp Quick-Chat Widget */}
+      <WhatsAppButton />
 
       {/* Calendly Booking Overlay */}
       <CalendlyModal

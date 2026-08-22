@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Code2, Lock, ArrowRight, UserCheck } from 'lucide-react';
+import { Target, Code2, Lock, ArrowRight, UserCheck, Linkedin, Sparkles, Video } from 'lucide-react';
 import SpecularButton from './SpecularButton';
 
 export default function About({ onOpenCalendly }) {
@@ -7,17 +7,38 @@ export default function About({ onOpenCalendly }) {
     {
       icon: Code2,
       title: 'Direct Engineering',
-      desc: 'Work directly with senior systems architects who build and maintain your system.',
+      desc: 'Work directly with senior systems architects who build, test, and maintain your software.',
     },
     {
       icon: Target,
       title: 'Outcome-Driven',
-      desc: 'We only build systems that tangibly reduce manual hours and operational costs.',
+      desc: 'We only build systems that tangibly reduce manual hours, prevent errors, and lower costs.',
     },
     {
       icon: Lock,
       title: 'Full Data Isolation',
-      desc: 'Strict API key management, encrypted storage, and zero model training on your data.',
+      desc: 'Strict API token vaults, VPC database isolation, and zero model training on confidential data.',
+    },
+  ];
+
+  const founders = [
+    {
+      name: 'Aarav Panchal',
+      role: 'Co-Founder & Systems Architect',
+      focus: 'AI Architecture • Autonomous Agents • Workflow Engineering',
+      image: '/founder-aarav.jpg',
+      initials: 'AP',
+      linkedin: 'https://www.linkedin.com/in/aarav-panchal-a667ba363',
+      bio: 'Leads AI model integration, voice agent pipelines, and high-performance custom application engineering.',
+    },
+    {
+      name: 'Chakrashen Maurya',
+      role: 'Co-Founder & Systems Engineer',
+      focus: 'ERP Infrastructure • Operations Automation • Data Pipelines',
+      image: '/founder-chakrashen.jpg',
+      initials: 'CM',
+      linkedin: '#',
+      bio: 'Leads enterprise ERP systems, database architectures, and production deployment stability.',
     },
   ];
 
@@ -25,81 +46,118 @@ export default function About({ onOpenCalendly }) {
     <section id="about" className="py-20 bg-[#f9f9fa] border-b border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Main Grid: Founder Story + Ethos */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center mb-12">
-          
-          {/* Left Column: Narrative */}
-          <div className="lg:col-span-7">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200/90 text-slate-800 text-[11px] font-bold tracking-wider uppercase mb-3 shadow-sm">
-              <UserCheck className="w-3.5 h-3.5 text-brand-600" />
-              <span>Founder & Philosophy</span>
-            </div>
-
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-[#09090b] tracking-tight leading-[1.15] mb-4">
-              Built by Engineers. <span className="italic font-serif">Focused on Business Outcomes</span>.
-            </h2>
-
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-6">
-              Founded by <strong className="text-[#09090b] font-semibold">Aarav Panchal</strong>, Bildora designs and builds custom AI voice agents, ERP platforms, and workflow automations for growing companies across India and worldwide.
-            </p>
-
-            <div>
-              <SpecularButton
-                size="md"
-                radius={999}
-                tint="#09090b"
-                tintOpacity={1}
-                textColor="#ffffff"
-                lineColor="#60a5fa"
-                baseColor="#1e293b"
-                intensity={1.2}
-                shineSize={10}
-                shineFade={40}
-                thickness={1}
-                followMouse={true}
-                proximity={200}
-                onClick={onOpenCalendly}
-              >
-                <span>Schedule a Discovery Call</span>
-                <ArrowRight className="w-4 h-4" />
-              </SpecularButton>
-            </div>
+        {/* Main Header & Story */}
+        <div className="max-w-3xl mx-auto text-center mb-14">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200/90 text-slate-800 text-[11px] font-bold tracking-wider uppercase mb-3 shadow-sm">
+            <UserCheck className="w-3.5 h-3.5 text-brand-600" />
+            <span>Leadership & Ethos</span>
           </div>
 
-          {/* Right Column: Founder Card */}
-          <div className="lg:col-span-5">
-            <div className="rounded-3xl bg-[#09090b] text-white p-7 sm:p-8 shadow-2xl relative overflow-hidden border border-slate-800">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-[#09090b] tracking-tight leading-[1.15] mb-4">
+            Built by Engineers. <span className="italic font-serif">Focused on Business Outcomes</span>.
+          </h2>
+
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+            Founded by <strong className="text-[#09090b] font-semibold">Aarav Panchal</strong> and <strong className="text-[#09090b] font-semibold">Chakrashen Maurya</strong>, Bildora designs and builds custom AI voice agents, ERP platforms, and workflow automations for growing companies across India and worldwide.
+          </p>
+        </div>
+
+        {/* Co-Founders Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-14">
+          {founders.map((founder, fIdx) => (
+            <div
+              key={fIdx}
+              className="rounded-3xl bg-[#09090b] text-white p-7 sm:p-8 shadow-2xl relative overflow-hidden border border-slate-800 flex flex-col justify-between"
+            >
               <div className="absolute top-0 right-0 w-48 h-48 bg-brand-600/15 blur-3xl rounded-full pointer-events-none" />
               
               <div className="relative z-10">
-                <div className="w-9 h-9 rounded-xl bg-brand-600 flex items-center justify-center text-white mb-5 shadow-md">
-                  <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
-                    <circle cx="12" cy="12" r="3" />
-                    <path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                  </svg>
+                {/* Header with Avatar & Role */}
+                <div className="flex items-center gap-4 mb-5">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-600 to-slate-900 border-2 border-brand-500/40 flex items-center justify-center text-white font-display font-extrabold text-xl shadow-lg shrink-0 overflow-hidden">
+                    <img
+                      src={founder.image}
+                      alt={founder.name}
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                      className="w-full h-full object-cover"
+                    />
+                    <span className="hidden items-center justify-center w-full h-full font-mono text-brand-300 font-bold">
+                      {founder.initials}
+                    </span>
+                  </div>
+
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between">
+                      <h3 className="font-display font-bold text-xl text-white">
+                        {founder.name}
+                      </h3>
+                      {founder.linkedin && founder.linkedin !== '#' && (
+                        <a
+                          href={founder.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-slate-400 hover:text-white transition-colors p-1.5 rounded-lg hover:bg-slate-800"
+                          aria-label={`${founder.name} on LinkedIn`}
+                        >
+                          <Linkedin className="w-4 h-4 text-brand-400" />
+                        </a>
+                      )}
+                    </div>
+                    <p className="text-xs text-brand-400 font-medium font-mono mt-0.5">
+                      {founder.role}
+                    </p>
+                  </div>
                 </div>
 
-                <blockquote className="font-serif text-lg sm:text-xl font-normal text-slate-100 leading-relaxed italic mb-5">
-                  "Our goal is straightforward: eliminate the friction in your daily operations so your team can focus on growth."
-                </blockquote>
+                {/* Bio / Focus */}
+                <p className="text-sm text-slate-300 leading-relaxed mb-5 font-normal">
+                  {founder.bio}
+                </p>
 
-                <div className="pt-3.5 border-t border-slate-800 flex items-center justify-between">
-                  <div>
-                    <h4 className="font-display font-bold text-sm text-white">Aarav Panchal</h4>
-                    <p className="text-xs text-brand-400 font-medium">Founder & Systems Architect</p>
-                  </div>
-                  <span className="text-xs px-2.5 py-0.5 rounded-full bg-slate-900 text-slate-300 font-mono border border-slate-700">
-                    bildora.in
-                  </span>
+                {/* Focus Pill */}
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-300 text-xs font-mono">
+                  <Sparkles className="w-3 h-3 text-brand-400" />
+                  <span>{founder.focus}</span>
                 </div>
               </div>
+
+              {/* Bottom Card Footer */}
+              <div className="pt-4 mt-6 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400 font-mono">
+                <span>BILDORA CO-FOUNDER</span>
+                <span className="text-brand-400">EST. 2025</span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Video Testimonial Teaser Banner */}
+        <div className="rounded-2xl bg-white border border-slate-200/90 p-5 sm:p-6 mb-12 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center shrink-0">
+              <Video className="w-5 h-5" />
+            </div>
+            <div>
+              <h4 className="font-serif text-lg font-normal text-[#09090b]">
+                Case Study & System Breakdown Video
+              </h4>
+              <p className="text-xs text-slate-500 font-normal">
+                Featuring Co-Founder Chakrashen Maurya detailing enterprise client deployments.
+              </p>
             </div>
           </div>
-
+          <div className="shrink-0">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-mono font-medium">
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-600 animate-pulse" />
+              Recording in Progress
+            </span>
+          </div>
         </div>
 
         {/* 3 Core Principles */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
           {pillars.map((pillar, pIdx) => {
             const Icon = pillar.icon;
             return (
@@ -119,6 +177,29 @@ export default function About({ onOpenCalendly }) {
               </div>
             );
           })}
+        </div>
+
+        {/* Bottom Discovery CTA */}
+        <div className="text-center pt-2">
+          <SpecularButton
+            size="md"
+            radius={999}
+            tint="#09090b"
+            tintOpacity={1}
+            textColor="#ffffff"
+            lineColor="#60a5fa"
+            baseColor="#1e293b"
+            intensity={1.2}
+            shineSize={10}
+            shineFade={40}
+            thickness={1}
+            followMouse={true}
+            proximity={200}
+            onClick={onOpenCalendly}
+          >
+            <span>Schedule a Discovery Call with Aarav & Chakrashen</span>
+            <ArrowRight className="w-4 h-4" />
+          </SpecularButton>
         </div>
 
       </div>
