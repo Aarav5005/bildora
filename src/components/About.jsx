@@ -67,14 +67,14 @@ export default function About({ onOpenCalendly }) {
           {founders.map((founder, fIdx) => (
             <div
               key={fIdx}
-              className="rounded-3xl bg-[#09090b] text-white p-7 sm:p-8 shadow-2xl relative overflow-hidden border border-slate-800 flex flex-col justify-between"
+              className="rounded-3xl bg-[#09090b] text-white p-7 sm:p-8 shadow-2xl relative overflow-hidden border border-slate-800 flex flex-col justify-between group hover:border-slate-700 transition-all duration-300"
             >
-              <div className="absolute top-0 right-0 w-48 h-48 bg-brand-600/15 blur-3xl rounded-full pointer-events-none" />
+              <div className="absolute top-0 right-0 w-64 h-64 bg-brand-600/10 blur-3xl rounded-full pointer-events-none group-hover:bg-brand-600/20 transition-all duration-500" />
               
               <div className="relative z-10">
-                {/* Header with Avatar & Role */}
-                <div className="flex items-center gap-4 mb-5">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-600 to-slate-900 border-2 border-brand-500/40 flex items-center justify-center text-white font-display font-extrabold text-xl shadow-lg shrink-0 overflow-hidden">
+                {/* Header with Executive Portrait & Role */}
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 mb-6">
+                  <div className="w-20 h-24 sm:w-24 sm:h-28 rounded-2xl bg-slate-900 border border-slate-700/90 shadow-xl shrink-0 overflow-hidden relative">
                     <img
                       src={founder.image}
                       alt={founder.name}
@@ -82,16 +82,16 @@ export default function About({ onOpenCalendly }) {
                         e.target.style.display = 'none';
                         e.target.nextSibling.style.display = 'flex';
                       }}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top filter contrast-[1.03] brightness-[0.98]"
                     />
-                    <span className="hidden items-center justify-center w-full h-full font-mono text-brand-300 font-bold">
+                    <span className="hidden items-center justify-center w-full h-full font-mono text-brand-400 font-extrabold text-2xl">
                       {founder.initials}
                     </span>
                   </div>
 
                   <div className="flex-1">
-                    <div className="flex items-center justify-between">
-                      <h3 className="font-display font-bold text-xl text-white">
+                    <div className="flex items-center justify-between gap-2">
+                      <h3 className="font-display font-bold text-2xl text-white">
                         {founder.name}
                       </h3>
                       {founder.linkedin && founder.linkedin !== '#' && (
@@ -99,35 +99,36 @@ export default function About({ onOpenCalendly }) {
                           href={founder.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-slate-400 hover:text-white transition-colors p-1.5 rounded-lg hover:bg-slate-800"
+                          className="text-slate-400 hover:text-white transition-colors p-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800"
                           aria-label={`${founder.name} on LinkedIn`}
                         >
                           <Linkedin className="w-4 h-4 text-brand-400" />
                         </a>
                       )}
                     </div>
-                    <p className="text-xs text-brand-400 font-medium font-mono mt-0.5">
+                    <p className="text-xs sm:text-sm text-brand-400 font-semibold font-mono mt-1">
                       {founder.role}
                     </p>
+                    <div className="mt-2.5 inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-slate-900/90 border border-slate-800 text-slate-300 text-[11px] font-mono">
+                      <Sparkles className="w-3 h-3 text-brand-400" />
+                      <span>{founder.focus}</span>
+                    </div>
                   </div>
                 </div>
 
                 {/* Bio / Focus */}
-                <p className="text-sm text-slate-300 leading-relaxed mb-5 font-normal">
+                <p className="text-sm text-slate-300 leading-relaxed font-normal bg-slate-950/60 p-4 rounded-2xl border border-slate-800/80">
                   {founder.bio}
                 </p>
-
-                {/* Focus Pill */}
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-300 text-xs font-mono">
-                  <Sparkles className="w-3 h-3 text-brand-400" />
-                  <span>{founder.focus}</span>
-                </div>
               </div>
 
               {/* Bottom Card Footer */}
               <div className="pt-4 mt-6 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400 font-mono">
-                <span>BILDORA CO-FOUNDER</span>
-                <span className="text-brand-400">EST. 2025</span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  BILDORA LEADERSHIP
+                </span>
+                <span className="text-brand-400 font-semibold">FOUNDING TEAM</span>
               </div>
             </div>
           ))}
