@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <!-- Bildora Autonomous Spark Icon -->
+  <g transform="translate(10, 10)">
+    <rect width="40" height="40" rx="10" fill="#09090b"/>
+    <g transform="translate(8, 8) scale(1.0)" stroke="#3b82f6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <circle cx="12" cy="12" r="3.2" fill="#3b82f6" stroke="none" />
+      <path d="M12 2v4M12 18v4M2 12h4M18 12h4" />
+      <path d="M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+    </g>
+  </g>
+  <!-- Bildora Typography -->
+  <text x="62" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="26" font-weight="800" letter-spacing="-0.5px" fill="#09090b">Bildora</text>
+</svg>
