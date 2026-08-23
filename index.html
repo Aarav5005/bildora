@@ -7,16 +7,37 @@
     <link rel="manifest" href="/manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#09090b" />
+    <meta name="format-detection" content="telephone=no" />
     
     <!-- Primary Meta Tags -->
     <title>Bildora — AI Automation Agency for Business Systems</title>
     <meta name="title" content="Bildora — AI Automation Agency for Business Systems" />
     <meta name="description" content="Bildora builds AI automations, voice agents, ERP systems, business software, and computer vision solutions for businesses in India and worldwide. Book a discovery call." />
-    <meta name="keywords" content="AI automation agency, AI voice agents, business process automation, custom ERP development, computer vision solutions, workflow automation, Bildora, Aarav Panchal, Chakrashen Maurya" />
+    <meta name="keywords" content="AI automation agency, AI voice agents, business process automation, custom ERP development, computer vision solutions, workflow automation, AI automation India, business software development, Bildora, Aarav Panchal, Chakrashen Maurya" />
     <meta name="author" content="Bildora" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="rating" content="General" />
     <link rel="canonical" href="https://bildora.in/" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+    <!-- Dublin Core Metadata -->
+    <meta name="DC.title" content="Bildora — AI Automation Agency for Business Systems" />
+    <meta name="DC.creator" content="Bildora" />
+    <meta name="DC.description" content="AI automations, voice agents, ERP systems, business software, and computer vision solutions for businesses in India and worldwide." />
+    <meta name="DC.language" content="en" />
+    <meta name="DC.subject" content="AI Automation, Business Software, ERP Systems, Voice Agents, Computer Vision" />
+
+    <!-- Geographic & Local SEO Meta Tags -->
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="India" />
+    <meta name="geo.position" content="20.5937;78.9629" />
+    <meta name="ICBM" content="20.5937, 78.9629" />
+
+    <!-- International SEO: hreflang -->
+    <link rel="alternate" hreflang="en-IN" href="https://bildora.in/" />
+    <link rel="alternate" hreflang="en-US" href="https://bildora.in/" />
+    <link rel="alternate" hreflang="en-GB" href="https://bildora.in/" />
+    <link rel="alternate" hreflang="x-default" href="https://bildora.in/" />
 
     <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:type" content="website" />
@@ -24,6 +45,11 @@
     <meta property="og:title" content="Bildora — AI Automation Agency for Business Systems" />
     <meta property="og:description" content="Bildora builds AI automations, voice agents, ERP systems, business software, and computer vision solutions for businesses in India and worldwide. Book a discovery call." />
     <meta property="og:image" content="https://bildora.in/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Bildora — AI Automation Agency" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content="Bildora" />
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -33,6 +59,7 @@
     <meta name="twitter:title" content="Bildora — AI Automation Agency for Business Systems" />
     <meta name="twitter:description" content="Bildora builds AI automations, voice agents, ERP systems, business software, and computer vision solutions for businesses in India and worldwide." />
     <meta name="twitter:image" content="https://bildora.in/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Bildora — AI Automation Agency" />
 
     <!-- Google Fonts: Instrument Serif, Newsreader, Plus Jakarta Sans & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,7 +76,12 @@
           "@id": "https://bildora.in/#organization",
           "name": "Bildora",
           "url": "https://bildora.in",
-          "logo": "https://bildora.in/favicon.svg",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://bildora.in/favicon.svg",
+            "width": 512,
+            "height": 512
+          },
           "email": "admin@bildora.in",
           "founders": [
             {
@@ -57,6 +89,7 @@
               "name": "Aarav Panchal",
               "jobTitle": "Co-Founder & Systems Architect",
               "url": "https://www.linkedin.com/in/aarav-panchal-a667ba363",
+              "knowsAbout": ["AI Automation", "Voice Agents", "Workflow Engineering", "Systems Architecture"],
               "sameAs": [
                 "https://www.linkedin.com/in/aarav-panchal-a667ba363",
                 "https://x.com/BildoraAI",
@@ -66,14 +99,59 @@
             {
               "@type": "Person",
               "name": "Chakrashen Maurya",
-              "jobTitle": "Co-Founder & Systems Engineer"
+              "jobTitle": "Co-Founder & Systems Engineer",
+              "knowsAbout": ["ERP Infrastructure", "Operations Automation", "Data Pipelines", "Database Architecture"]
             }
           ],
+          "foundingDate": "2025",
+          "numberOfEmployees": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 10
+          },
           "sameAs": [
             "https://www.linkedin.com/in/aarav-panchal-a667ba363",
             "https://x.com/BildoraAI",
             "https://github.com/Aarav5005/bildora"
-          ]
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "admin@bildora.in",
+            "contactType": "sales",
+            "availableLanguage": ["English", "Hindi"],
+            "areaServed": ["IN", "US", "GB", "AE", "SG", "CA", "AU"]
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "AI Automation & Business Systems Services",
+            "itemListElement": [
+              {
+                "@type": "OfferCatalog",
+                "name": "AI Workflow & Data Automation",
+                "description": "Automate repetitive workflows, data entry, PDF document processing, notifications, and cross-application database synchronizations."
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "AI Conversational Voice Agents",
+                "description": "AI-powered phone agents that answer customer questions, qualify inbound leads, schedule appointments, and route complex calls."
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "Web & App Development",
+                "description": "High-performance websites, customer portals, and cross-platform mobile applications."
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "ERP & Business Systems",
+                "description": "Custom internal software for inventory ledgers, multi-branch operations, automated billing, and executive reporting."
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "Computer Vision & AI Cameras",
+                "description": "Intelligent CCTV systems for footfall analytics, safety compliance monitoring, and automated alerts."
+              }
+            ]
+          }
         },
         {
           "@type": "ProfessionalService",
@@ -87,7 +165,31 @@
           "address": {
             "@type": "PostalAddress",
             "addressCountry": "IN"
-          }
+          },
+          "areaServed": [
+            { "@type": "Country", "name": "India" },
+            { "@type": "Country", "name": "United States" },
+            { "@type": "Country", "name": "United Kingdom" },
+            { "@type": "Country", "name": "United Arab Emirates" },
+            { "@type": "Country", "name": "Canada" },
+            { "@type": "Country", "name": "Australia" },
+            { "@type": "Country", "name": "Singapore" }
+          ],
+          "knowsAbout": [
+            "AI Automation",
+            "Voice Agents",
+            "ERP Systems",
+            "Computer Vision",
+            "Business Process Automation",
+            "Custom Software Development"
+          ],
+          "serviceType": [
+            "AI Workflow Automation",
+            "AI Voice Agent Development",
+            "Web & Mobile App Development",
+            "Custom ERP Development",
+            "Computer Vision Solutions"
+          ]
         },
         {
           "@type": "WebSite",
@@ -97,7 +199,150 @@
           "description": "AI Automation Agency for Business Systems",
           "publisher": {
             "@id": "https://bildora.in/#organization"
-          }
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://bildora.in/#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bildora.in/" },
+            { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://bildora.in/#services" },
+            { "@type": "ListItem", "position": 3, "name": "Process", "item": "https://bildora.in/#process" },
+            { "@type": "ListItem", "position": 4, "name": "Case Studies", "item": "https://bildora.in/#work" },
+            { "@type": "ListItem", "position": 5, "name": "About", "item": "https://bildora.in/#about" },
+            { "@type": "ListItem", "position": 6, "name": "Contact", "item": "https://bildora.in/#contact" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://bildora.in/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How fast can you build and deploy an AI automation or voice bot?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most workflow automations and voice agents are delivered in 7 to 14 days. Custom ERPs and vision systems typically take 3 to 6 weeks with weekly milestone demos."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does your pricing work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Workflows start from ₹8,000 / $200. Larger platforms are scoped with transparent, upfront fixed quotes based on your tools and requirements."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you integrate with our existing legacy tools and databases?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We build custom API connectors for Shopify, Tally, Zoho, Salesforce, QuickBooks, HubSpot, SAP, and custom PostgreSQL databases."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do we own 100% of the code and intellectual property?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, completely. All custom source code, configurations, and database schemas belong 100% to your company with zero ongoing license fees."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is confidential business and customer data protected?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We use zero-retention AI endpoints, encrypted credential vaults, and private database VPCs. Your data is never used to train public models."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you work with businesses outside India?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We actively work with clients across North America, the UK, Europe, the UAE, and Asia with cross-timezone communication."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://bildora.in/#service-automation",
+          "name": "AI Workflow & Data Automation",
+          "description": "Automate repetitive workflows, data entry, PDF document processing, notifications, and cross-application database synchronizations.",
+          "provider": { "@id": "https://bildora.in/#organization" },
+          "serviceType": "AI Workflow Automation",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "INR",
+            "price": "8000",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "INR",
+              "price": "8000",
+              "description": "Starting price for workflow automation projects"
+            }
+          },
+          "areaServed": { "@type": "Country", "name": "India" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://bildora.in/#service-voice",
+          "name": "AI Conversational Voice Agents",
+          "description": "AI-powered phone agents that answer customer questions, qualify inbound leads, schedule appointments on Google Calendar, and route complex calls to human staff.",
+          "provider": { "@id": "https://bildora.in/#organization" },
+          "serviceType": "AI Voice Agent Development",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "INR",
+            "price": "5000"
+          },
+          "areaServed": { "@type": "Country", "name": "India" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://bildora.in/#service-webdev",
+          "name": "Web & App Development",
+          "description": "High-performance websites, customer portals, and cross-platform mobile applications designed around your exact business workflows.",
+          "provider": { "@id": "https://bildora.in/#organization" },
+          "serviceType": "Web & Mobile App Development",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "INR",
+            "price": "12000"
+          },
+          "areaServed": { "@type": "Country", "name": "India" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://bildora.in/#service-erp",
+          "name": "ERP & Business Systems",
+          "description": "Custom internal software for inventory ledgers, multi-branch operations, automated billing, GST compliance, and executive reporting.",
+          "provider": { "@id": "https://bildora.in/#organization" },
+          "serviceType": "Custom ERP Development",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "INR",
+            "price": "40000"
+          },
+          "areaServed": { "@type": "Country", "name": "India" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://bildora.in/#service-vision",
+          "name": "Computer Vision & AI Cameras",
+          "description": "Turn existing CCTV camera infrastructure into intelligent systems for footfall analytics, safety compliance monitoring, and automated alerts.",
+          "provider": { "@id": "https://bildora.in/#organization" },
+          "serviceType": "Computer Vision Solutions",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "INR",
+            "price": "20000"
+          },
+          "areaServed": { "@type": "Country", "name": "India" }
         }
       ]
     }

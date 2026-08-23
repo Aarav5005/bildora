@@ -36,7 +36,7 @@ export default function FAQ({ onOpenCalendly }) {
   };
 
   return (
-    <section className="py-20 bg-[#f9f9fa] border-b border-slate-200/80">
+    <section id="faq" className="py-20 bg-[#f9f9fa] border-b border-slate-200/80" aria-labelledby="faq-heading">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -44,7 +44,7 @@ export default function FAQ({ onOpenCalendly }) {
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200/90 text-slate-800 text-[11px] font-bold tracking-wider uppercase mb-3 shadow-sm">
             <span>FAQ</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#09090b] tracking-tight">
+          <h2 id="faq-heading" className="font-serif text-3xl sm:text-5xl font-normal text-[#09090b] tracking-tight">
             Frequently Asked <span className="italic font-serif">Questions</span>
           </h2>
           <p className="mt-2 text-sm sm:text-base text-slate-600 font-normal">

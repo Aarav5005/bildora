@@ -1,21 +1,26 @@
 {
   "name": "Bildora — AI Automation Agency",
   "short_name": "Bildora",
-  "description": "AI automations, voice agents, ERP systems, and computer vision solutions for businesses.",
+  "description": "AI automations, voice agents, ERP systems, and computer vision solutions for businesses in India and worldwide.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#09090b",
   "theme_color": "#09090b",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "utilities"],
   "icons": [
     {
       "src": "/favicon.svg",
       "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/svg+xml",
+      "purpose": "any"
     },
     {
       "src": "/logo-icon.svg",
       "sizes": "192x192",
-      "type": "image/svg+xml"
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
     }
   ]
 }

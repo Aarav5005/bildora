@@ -132,7 +132,7 @@ export default function Footer({ onOpenCalendly }) {
 
         {/* Bottom Copyright & Socials */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-mono">
-          <p>© 2025 Bildora. All rights reserved. Founded by Aarav Panchal.</p>
+          <p>© 2025–2026 Bildora. All rights reserved. Founded by Aarav Panchal & Chakrashen Maurya.</p>
           
           <div className="flex items-center gap-5 sm:gap-6">
             <a

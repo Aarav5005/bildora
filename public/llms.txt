@@ -1,0 +1,68 @@
+# Bildora — AI Automation Agency
+
+> Bildora is an India-based AI automation and custom software engineering agency serving businesses locally and globally.
+
+## Services
+
+- AI Workflow & Data Automation: Automate repetitive workflows, data entry, PDF document processing, notifications, and cross-application database synchronizations. Starting from ₹8,000 / $200.
+- AI Conversational Voice Agents: AI-powered phone agents that answer customer questions, qualify inbound leads, schedule appointments on Google Calendar, and route complex calls to human staff. Starting from ₹5,000 / $150.
+- Web & App Development: High-performance websites, customer portals, and cross-platform mobile applications designed around your exact business workflows. Starting from ₹12,000 / $300.
+- ERP & Business Systems: Custom internal software for inventory ledgers, multi-branch operations, automated billing, GST compliance, and executive reporting. Starting from ₹40,000 / $900.
+- Computer Vision & AI Cameras: Turn existing CCTV camera infrastructure into intelligent systems for footfall analytics, safety compliance monitoring, and automated alerts. Starting from ₹20,000 / $500.
+
+## Industries Served
+
+- E-commerce & Retail
+- Restaurants & Hospitality
+- Schools & Education
+- Manufacturing & Logistics
+- Gyms & Service Businesses
+
+## Case Studies
+
+### AsportsZone (E-Commerce & Retail Logistics)
+Engineered automated order-to-warehouse dispatch, multi-channel inventory sync, and instant 3PL carrier hooks. Custom event-driven webhook pipeline that parses Shopify orders in real time, generates pick-lists, updates ERP inventory, and pushes dispatch manifests directly to 3PL logistics carriers.
+
+### MOX VOX (Mobile Apps & Business Communications)
+Built cross-platform iOS & Android mobile apps with integrated WhatsApp Cloud API customer follow-up pipelines. Unified Flutter mobile application backed by Supabase with automated WhatsApp trigger webhooks for immediate lead response.
+
+### The Spice Story (Hospitality & Restaurant)
+High-speed web presence, digital menu synchronizer, and instant SMS reservation booking engine. Significant increase in direct online reservations with zero commission overhead.
+
+## Process
+
+1. Understand & Audit: We map your current workflows, identify high-friction bottlenecks, and deliver a clear technical blueprint with fixed milestone pricing.
+2. Engineer & Integrate: We build your automations, integrate your APIs, test edge cases, and ensure seamless connection with your current tools.
+3. Deploy & Support: We launch the system, onboard your team, and provide proactive hypercare monitoring to ensure long-term stability.
+
+## FAQ
+
+Q: How fast can you build and deploy an AI automation or voice bot?
+A: Most workflow automations and voice agents are delivered in 7 to 14 days. Custom ERPs and vision systems typically take 3 to 6 weeks with weekly milestone demos.
+
+Q: How does your pricing work?
+A: Workflows start from ₹8,000 / $200. Larger platforms are scoped with transparent, upfront fixed quotes based on your tools and requirements.
+
+Q: Can you integrate with our existing legacy tools and databases?
+A: Yes. We build custom API connectors for Shopify, Tally, Zoho, Salesforce, QuickBooks, HubSpot, SAP, and custom PostgreSQL databases.
+
+Q: Do we own 100% of the code and intellectual property?
+A: Yes, completely. All custom source code, configurations, and database schemas belong 100% to your company with zero ongoing license fees.
+
+Q: How is confidential business and customer data protected?
+A: We use zero-retention AI endpoints, encrypted credential vaults, and private database VPCs. Your data is never used to train public models.
+
+Q: Do you work with businesses outside India?
+A: Yes. We actively work with clients across North America, the UK, Europe, the UAE, and Asia with cross-timezone communication.
+
+## About
+
+Founded by Aarav Panchal and Chakrashen Maurya. Bildora operates on the belief that repetitive manual work is an expensive, avoidable drag on growing companies. Headquartered in India and working with businesses worldwide.
+
+## Contact
+
+- Email: admin@bildora.in
+- Website: https://bildora.in
+- LinkedIn: https://www.linkedin.com/in/aarav-panchal-a667ba363
+- X (Twitter): https://x.com/BildoraAI
+- GitHub: https://github.com/Aarav5005/bildora
