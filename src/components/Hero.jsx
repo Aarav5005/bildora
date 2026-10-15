@@ -20,8 +20,8 @@ export default function Hero({ onOpenCalendly }) {
 
   return (
     <section className="relative min-h-[92vh] lg:min-h-[96vh] flex flex-col justify-between pt-28 pb-8 lg:pt-32 lg:pb-10 overflow-hidden bg-[#f9f9fa]">
-      {/* 1. Interactive RippleDistortion Background */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden z-0 select-none opacity-25 hover:opacity-40 transition-opacity duration-700 pointer-events-auto">
+      {/* 1. Interactive RippleDistortion Background (non-interactive on touch so it never blocks scrolling) */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden z-0 select-none opacity-25 hover:opacity-40 transition-opacity duration-700 pointer-events-none md:pointer-events-auto">
         <RippleDistortion
           src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
           brushSize={95}
