@@ -53,17 +53,17 @@ export default function Hero({ onOpenCalendly }) {
         {/* Geographic & Trust Pill */}
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md border border-slate-200/90 text-slate-800 text-[11px] font-bold tracking-wider uppercase mb-5 shadow-sm">
           <span className="w-1.5 h-1.5 rounded-full bg-brand-600 animate-pulse" />
-          <span>India-based • Serving businesses worldwide</span>
+          <span>India-based • Built for operational complexity</span>
         </div>
 
         {/* Crisp Headline */}
         <h1 className="font-serif text-4xl sm:text-6xl lg:text-[72px] font-normal text-[#09090b] tracking-tight leading-[1.08] max-w-3xl mx-auto mb-4">
-          AI Automation & Business Systems <span className="italic font-serif">Built for Scale</span>
+          The AI operations layer <span className="italic font-serif">for manufacturing</span>
         </h1>
 
         {/* Short, Punchy 1-Sentence Subtitle */}
         <p className="max-w-xl mx-auto text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-8">
-          We design and build AI voice agents, custom ERPs, and workflow automations that eliminate repetitive manual operations.
+          Bildora is building a coordinated operations layer that connects channels such as WhatsApp, calls, email, PDFs, and existing software. The goal: help manufacturing teams move information between orders, stock, production, purchasing, and invoices — with people approving consequential actions.
         </p>
 
         {/* Action Buttons */}
@@ -89,10 +89,10 @@ export default function Hero({ onOpenCalendly }) {
           </SpecularButton>
 
           <a
-            href="#services"
+            href="#platform"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium text-slate-800 bg-white hover:bg-slate-50 border border-slate-200/90 transition-all duration-200 shadow-sm"
           >
-            <span>Explore Services</span>
+            <span>See how it works</span>
             <ChevronDown className="w-4 h-4 text-slate-400" />
           </a>
         </div>
