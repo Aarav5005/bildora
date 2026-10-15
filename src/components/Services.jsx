@@ -373,6 +373,11 @@ export default function Services({ currency, onSelectService }) {
           })}
         </div>
 
+        {/* Pricing Note */}
+        <p className="mt-10 text-center text-xs sm:text-sm text-slate-500 font-normal max-w-2xl mx-auto">
+          Fixed pricing applies to tightly defined deliverables. Complex integrations are quoted after discovery — we won&apos;t price a system before we understand the workflow.
+        </p>
+
       </div>
     </section>
   );
