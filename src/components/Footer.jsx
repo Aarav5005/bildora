@@ -27,7 +27,7 @@ export default function Footer({ onOpenCalendly }) {
               </span>
             </a>
             <p className="text-sm text-slate-400 max-w-sm leading-relaxed font-normal">
-              Autonomous AI engineering agency architecting voice agents, bespoke ERPs, and deterministic workflow pipelines for global enterprises.
+              Building an AI operations layer for manufacturing, alongside automation services for businesses.
             </p>
             <div className="pt-2">
               <span className="inline-flex items-center gap-1.5 text-xs text-brand-400 font-mono">
