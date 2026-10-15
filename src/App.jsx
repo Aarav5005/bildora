@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TechStackTicker from './components/TechStackTicker';
+import Offerings from './components/Offerings';
+import Platform from './components/Platform';
+import Workflows from './components/Workflows';
 import Services from './components/Services';
 import RoiCalculator from './components/RoiCalculator';
 import Process from './components/Process';
@@ -56,6 +59,9 @@ export default function App() {
       <main id="main" className="flex-grow">
         <Hero onOpenCalendly={handleOpenCalendly} />
         <TechStackTicker />
+        <Offerings />
+        <Platform />
+        <Workflows />
         <Services currency={currency} onSelectService={handleSelectService} />
         <RoiCalculator
           currency={currency}
