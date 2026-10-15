@@ -6,11 +6,6 @@ export default function TechStackTicker() {
     { name: 'AsportsZone', sector: 'E-Commerce' },
     { name: 'MOX VOX', sector: 'Mobile & Voice' },
     { name: 'The Spice Story', sector: 'Hospitality' },
-    { name: 'CoreOS Systems', sector: 'Infrastructure' },
-    { name: 'Warpspeed AI', sector: 'Logistics' },
-    { name: 'Ikigai Labs', sector: 'Analytics' },
-    { name: 'Visionwork AI', sector: 'Computer Vision' },
-    { name: 'Convergence AI', sector: 'Enterprise SaaS' },
   ];
 
   return (
@@ -19,14 +14,14 @@ export default function TechStackTicker() {
         <div>
           <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-slate-200 text-slate-800 text-[11px] font-bold tracking-wider uppercase mb-2 shadow-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-600 animate-pulse" />
-            <span>Trusted Global Ecosystem</span>
+            <span>Selected Client Work</span>
           </div>
           <h3 className="font-serif text-2xl sm:text-3xl text-slate-950 font-normal tracking-tight">
-            Trusted by fast-growing enterprises
+            Built from real operational work.
           </h3>
         </div>
         <p className="text-xs text-slate-500 max-w-xs font-normal">
-          Deploying autonomous intelligence across North America, Europe, UAE, and India.
+          Our experience across selected e-commerce, mobile, and hospitality projects informs the problems we&apos;re exploring in manufacturing.
         </p>
       </div>
 
