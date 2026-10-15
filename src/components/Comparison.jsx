@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layers, Users2, Key, Target, TrendingUp, CheckCircle2 } from 'lucide-react';
+import { Layers, Users2, Key, Target, TrendingUp, CheckCircle2, Factory } from 'lucide-react';
 
 export default function Comparison({ onOpenCalendly }) {
   const pillars = [
@@ -27,6 +27,11 @@ export default function Comparison({ onOpenCalendly }) {
       icon: TrendingUp,
       title: 'Engineered to Scale with Growth',
       description: 'We build with robust, production-tested technologies (Python, React, FastAPI, PostgreSQL) that adapt smoothly as your transaction volume and team expand.',
+    },
+    {
+      icon: Factory,
+      title: 'Manufacturing Focus',
+      description: "We're going deep on one industry's operations — building a repeatable operations layer for manufacturers — rather than claiming to solve every industry's problems with the same generic system.",
     },
   ];
 
