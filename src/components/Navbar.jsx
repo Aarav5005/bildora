@@ -15,9 +15,9 @@ export default function Navbar({ onOpenCalendly, currency, setCurrency }) {
   }, []);
 
   const navLinks = [
+    { name: 'Platform', href: '#platform' },
     { name: 'Services', href: '#services' },
-    { name: 'How We Work', href: '#process' },
-    { name: 'Case Studies', href: '#work' },
+    { name: 'Work', href: '#work' },
     { name: 'Why Bildora', href: '#why-bildora' },
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
