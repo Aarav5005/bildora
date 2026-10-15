@@ -11,7 +11,11 @@ export default function FAQ({ onOpenCalendly }) {
     },
     {
       q: 'How does your pricing work?',
-      a: 'Workflows start from ₹8,000 / $200. Larger platforms are scoped with transparent, upfront fixed quotes based on your tools and requirements.',
+      a: 'Tightly defined service deliverables can have fixed pricing. Complex integrations are quoted after discovery. For the manufacturing platform, setup and subscription pricing will be scoped as the product and initial workflows are validated.',
+    },
+    {
+      q: 'Is the manufacturing platform available now?',
+      a: 'Not yet. We\u2019re developing it workflow by workflow and speaking with manufacturers to validate the first use case. If you run a manufacturing business and would like to discuss a potential early test, talk to us.',
     },
     {
       q: 'Can you integrate with our existing legacy tools and databases?',
@@ -27,7 +31,7 @@ export default function FAQ({ onOpenCalendly }) {
     },
     {
       q: 'Do you work with businesses outside India?',
-      a: 'Yes. We actively work with clients across North America, the UK, Europe, the UAE, and Asia with cross-timezone communication.',
+      a: 'Yes. We are based in India and work with businesses worldwide, with cross-timezone communication as part of how we operate.',
     },
   ];
 
