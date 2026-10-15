@@ -89,7 +89,7 @@ export default function CaseStudies() {
             Real Systems. <span className="italic font-serif">Real Businesses</span>.
           </h2>
           <p className="mt-2.5 text-sm sm:text-base text-slate-600 font-normal">
-            Click any deployment card to inspect the technical architecture and verified operational outcomes.
+            Selected past client work. These projects show the kinds of operational problems we&apos;ve worked on across industries; they are not manufacturing-platform deployments.
           </p>
         </div>
 
